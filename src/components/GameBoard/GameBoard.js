@@ -48,7 +48,28 @@ export default class GameBoard extends Component {
     this.checkIfCollapsed();
     this.checkIfFoodEaten();
   }
-
+  onTouchStart = (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    this.touchStartX = touch.clientX;
+    this.touchStartY = touch.clientY;
+  }
+  
+  onTouchMove = (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const deltaX = touch.clientX - this.touchStartX;
+    const deltaY = touch.clientY - this.touchStartY;
+  
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      if (deltaX > 0) this.setState({ direction: 'RIGHT' });
+      else this.setState({ direction: 'LEFT' });
+    } else {
+      if (deltaY > 0) this.setState({ direction: 'DOWN' });
+      else this.setState({ direction: 'UP' });
+    }
+  }
+  
   onKeyDown = (e) => {
     e = e || window.event; 
     switch (e.keyCode) {
