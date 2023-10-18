@@ -9,7 +9,6 @@
     height: 50%;
    
   }
-  /* Responsive styles */
   @media (max-width: 600px) {
     .snake-dot {
       width: 4%; 

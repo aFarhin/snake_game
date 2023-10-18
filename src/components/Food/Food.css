@@ -2,18 +2,18 @@
 {
   position: absolute;.snake-food {
     position: absolute;
-    width: 2%; /* Adjust the width as needed for responsiveness */
-    height: 2%; /* Adjust the height as needed for responsiveness */
+    width: 2%; 
+    height: 2%; 
     background-color: red;
     border: 1px solid #333;
     border-radius: 50%;
   }
   
-  /* Responsive styles */
+  
   @media (max-width: 600px) {
     .snake-food {
-      width: 4%; /* Adjust the width for smaller screens */
-      height: 4%; /* Adjust the height for smaller screens */
+      width: 4%; 
+      height: 4%; 
     }
   }
   
