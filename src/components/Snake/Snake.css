@@ -1,0 +1,19 @@
+.snake-dot {
+    position: absolute;
+    width: 2%; 
+    height: 2%; 
+    background-color: green;
+    border: 1px solid black;
+  }
+  .snake{
+    height: 50%;
+   
+  }
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .snake-dot {
+      width: 4%; 
+      height: 4%;
+    }
+  }
+  

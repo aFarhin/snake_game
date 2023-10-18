@@ -1,38 +1,78 @@
-.App {
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: url(./components/snake-bi.webp) no-repeat;
+  background-size: cover;
+}
+
+
+.header {
+  background-color: rgba(11, 87, 117, 0.623);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.mainscreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.level {
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.level h2 {
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.level p {
+  font-size: 18px;
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.instruction {
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.gameboard {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.game-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.score-area {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body{
+    background: url(./components/snake-bi.webp) repeat;
   }
 }

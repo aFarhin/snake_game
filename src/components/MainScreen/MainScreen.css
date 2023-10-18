@@ -1,0 +1,173 @@
+
+
+.mainscreen {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem;
+    gap: 3rem;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+  }
+  
+  .level {
+    flex: 1.3;
+    margin-right: 20px;
+    margin-bottom: 2rem;
+  }
+  
+  .level-buttons {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #4510a8;
+    box-shadow: 2px 2px 4px 2px rgb(151, 151, 146);
+    color: white;
+    margin-right: 3rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  h2{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(66, 65, 5, 0.568);
+    text-align: center;
+    padding: .3rem;
+    width: auto;
+  }
+  .instructions {
+    background-color: rgba(189, 230, 124, 0.637);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px 4px rgb(151, 151, 146);
+  }
+  
+  .instructions h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .instructions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .instructions li {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .instructions strong {
+    color: #0074d9;
+  }
+  
+  .instructions p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .instructions strong {
+    color: #970a0a;
+  }
+  
+ 
+  .level-button:hover {
+    background-color: #1976D2;
+  }
+  
+  .instruction {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .scorecard {
+    flex: 1;
+  }
+  
+  .hscore-div {
+    margin-bottom: 20px;
+  }
+  
+  .resetbtn {
+    background-color: rgb(78, 8, 78);
+    box-shadow: 2px 2px 4px 2px  rgba(218, 205, 29, 0.774);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .resetbtn:hover {
+    background-color: green;
+  }
+  
+  .resetall {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .resetallbtn {
+    background-color: rgb(122, 10, 10);
+    color: yellow;
+    font-weight: 700;
+    box-shadow: 2px 2px 4px 2px  rgb(223, 217, 217);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  p{
+    color: black;
+    font-weight: bolder;
+  }
+  .resetallbtn:hover {
+    background-color: #d32f2f;
+  }
+  
+@media (max-width: 768px) {
+  body{
+    height: 100%;
+  }
+  .mainscreen {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .level {
+    flex: 1;
+  }
+
+  .instructions h2 {
+    font-size: 1rem;
+  }
+
+  .instructions li {
+    font-size: .5rem;
+  }
+
+  .instruction {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .scorecard {
+    flex: 1;
+    margin-bottom: 2rem;
+  }
+
+  .resetall {
+    margin-top: 4rem;
+  }
+}

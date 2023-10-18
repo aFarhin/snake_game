@@ -1,0 +1,25 @@
+.snake-food
+{
+  position: absolute;.snake-food {
+    position: absolute;
+    width: 2%; /* Adjust the width as needed for responsiveness */
+    height: 2%; /* Adjust the height as needed for responsiveness */
+    background-color: red;
+    border: 1px solid #333;
+    border-radius: 50%;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .snake-food {
+      width: 4%; /* Adjust the width for smaller screens */
+      height: 4%; /* Adjust the height for smaller screens */
+    }
+  }
+  
+  width: 2%;
+  height: 2%;
+  background-color: rgb(255, 0, 0);
+  border: 1px solid white;
+  z-index: 1;
+}

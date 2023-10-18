@@ -1,0 +1,57 @@
+
+.gameboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+  }
+  
+  .game-area {
+    position: relative;
+    height: 60%;
+    width: 80%; 
+    max-width: 500px; 
+    background:linear-gradient(to right, yellow, rgb(202, 209, 158), yellow);
+    border: 2px solid #333;
+    box-shadow: 2px 2px 3px 4px black;
+    padding: 1rem;
+  }
+  
+  .score-area {
+    width: 100%;
+    height: auto;
+    max-width: 500px; 
+    background-color: #333;
+    box-shadow: 2px 2px 3px 4px black;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .game-area {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .score-area {
+      padding: 5px;
+    }
+  }
+  
+  
+  .button {
+    background-color: #09830d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 4px black;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background-color: orangered;
+  }
+  

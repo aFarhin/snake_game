@@ -1,0 +1,17 @@
+.header {
+    padding: 20px;
+    text-align: center;
+    font-size: 34px;
+    text-shadow: 2px 3px 4px rgb(235, 226, 225);
+    text-transform: uppercase;
+    box-shadow: 2px 3px 4px 4px rgb(119, 118, 25);
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+        color: white;
+      font-size: 18px;
+      padding: 5px;
+    }
+  }
+  
